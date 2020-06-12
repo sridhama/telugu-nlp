@@ -9,8 +9,8 @@ zwnj = "\u200C" # zero width non-joiner
 #     return "\\u0{}".format(hex(i)[2:].upper())
 # temp = [str(int_to_char(c)) for c in range(3077, 3130)]
 
-def get_letters(word):
-    '''Returns the letters from a Telugu word.'''
+def get_chars(word):
+    '''Returns the characters constituting the inputted Telugu word.'''
     length = len(word)
     stack = list()
     i = 0
@@ -53,4 +53,4 @@ s = "శ్రీధామ"
 
 for c in s:
     print(c)
-print(get_letters(s))
+print(get_chars(s))
